@@ -1,0 +1,564 @@
+{
+  "code": 200,
+  "msg": "商品数据返回成功",
+  "data": {
+    "id": "Chanel",
+    "shopName": "香奈儿官方旗舰店",
+    "start": 5,
+    "logo": "",
+    "nav": [
+      {
+        "label": "首页",
+        "navCode": "home",
+        "des": ""
+      },
+
+      {
+        "label": "香水",
+        "navCode": "perfume",
+        "des": ""
+      },
+
+      {
+        "label": "护肤品",
+        "navCode": "skin",
+        "des": ""
+      },
+
+      {
+        "label": "细节艺术",
+        "navCode": "others",
+        "des": "这里也不知道说些什么好，反正就是大牌！"
+      }
+    ],
+    "goodsType": [
+      {
+        "typeCode": "01",
+        "label": "香水",
+        "list": [
+          {
+            "typeCode": "01001",
+            "label": "5 号香水系列"
+          },
+
+          {
+            "typeCode": "01002",
+            "label": "coco小姐香水系列"
+          },
+
+          {
+            "typeCode": "01003",
+            "label": "邂逅香水系列"
+          },
+
+          {
+            "typeCode": "01004",
+            "label": "蔚蓝男士香水系列"
+          }
+        ]
+      },
+
+      {
+        "typeCode": "02",
+        "label": "护肤品",
+        "list": [
+          {
+            "typeCode": "02001",
+            "label": "山茶花保湿系列"
+          },
+
+          {
+            "typeCode": "02002",
+            "label": "奢华精粹系列"
+          },
+
+          {
+            "typeCode": "02003",
+            "label": "智慧紧肤系列"
+          },
+
+          {
+            "typeCode": "02004",
+            "label": "光彩透白系列"
+          }
+        ]
+      }
+    ],
+    "goods": [
+      {
+        "label": "香奈儿光采夜间修护精华",
+        "type": "00004411",
+        "goodsType": "02004",
+        "price": "1120",
+        "img": "/imgsChanel/guangcai01.jpg",
+        "details": "【官方正品】CHANEL香奈儿光采夜间修护精华焕活肌肤提亮肤色",
+        "id": "香奈儿光采夜间修护精华02004",
+        "sale": 1000,
+        "star": 4
+      },
+
+      {
+        "label": "香奈儿光采透白面霜轻盈版",
+        "goodsType": "02004",
+        "type": "00004411",
+        "price": "980",
+        "img": "/imgsChanel/guangcai02.jpg",
+        "details": "【官方正品】CHANEL香奈儿光采透白面霜轻盈版 深层滋润 轻透",
+        "id": "香奈儿光采透白面霜轻盈版02004",
+        "sale": 2000,
+        "star": 5
+      },
+
+      {
+        "label": "香奈儿光采透白精华",
+        "goodsType": "02004",
+        "type": "00004411",
+        "price": "1100",
+        "img": "/imgsChanel/guangcai03.jpg",
+        "details": "【官方正品】CHANEL 香奈儿光采透白精华 提亮肤色",
+        "id": "香奈儿光采透白精华02004",
+        "sale": 990,
+        "star": 4
+      },
+
+      {
+        "label": "香奈儿光采洁肤乳",
+        "goodsType": "02004",
+        "type": "00004411",
+        "price": "505",
+        "img": "/imgsChanel/guangcai04.jpg",
+        "details": "【抢先加购】CHANEL 香奈儿光采洁肤乳 泡沫洗面奶 温和洁净",
+        "id": "香奈儿光采洁肤乳02004",
+        "sale": 2500,
+        "star": 3
+      },
+
+      {
+        "label": "香奈儿光采透白精华水",
+        "goodsType": "02004",
+        "type": "00004411",
+        "price": "655",
+        "img": "/imgsChanel/guangcai05.jpg",
+        "details": "【官方正品】CHANEL 香奈儿光采透白精华水 保湿提亮",
+        "id": "香奈儿光采透白精华水02004",
+        "sale": 950,
+        "star": 5
+      },
+
+      {
+        "label": "香奈儿智慧紧肤精华水",
+        "goodsType": "02003",
+        "type": "00004411",
+        "price": "750",
+        "img": "/imgsChanel/jinzhi01.jpg",
+        "details": "【官方正品】CHANEL 香奈儿智慧紧肤精华水 高效保湿紧致肌肤",
+        "id": "香奈儿智慧紧肤精华水02003",
+        "sale": 2250,
+        "star": 4.5
+      },
+
+      {
+        "label": "香奈儿智慧紧肤护手霜",
+        "goodsType": "02003",
+        "type": "00004411",
+        "price": "565",
+        "img": "/imgsChanel/jinzhi02.jpg",
+        "details": "【官方正品】CHANEL 香奈儿智慧紧肤护手霜 黑蛋护手霜滋润双手",
+        "id": "香奈儿智慧紧肤护手霜02003",
+        "sale": 800,
+        "star": 3
+      },
+
+      {
+        "label": "香奈儿智慧紧肤提拉眼霜",
+        "goodsType": "02003",
+        "type": "00004411",
+        "price": "865",
+        "img": "/imgsChanel/jinzhi03.jpg",
+        "details": "【抢先加购】CHANEL 香奈儿智慧紧肤提拉眼霜 滋养紧致眼周",
+        "id": "香奈儿智慧紧肤提拉眼霜02003",
+        "sale": 960,
+        "star": 3.5
+      },
+
+      {
+        "label": "香奈儿智慧紧肤提拉精华",
+        "goodsType": "02003",
+        "type": "00004411",
+        "price": "1380",
+        "img": "/imgsChanel/jinzhi04.jpg",
+        "details": "【官方正品】CHANEL 香奈儿智慧紧肤提拉精华 强韧肌底紧致肌肤",
+        "id": "香奈儿智慧紧肤提拉精华02003",
+        "sale": 1350,
+        "star": 3.5
+      },
+
+      {
+        "label": "香奈儿奢华精萃赋活眼霜",
+        "goodsType": "02002",
+        "type": "00004411",
+        "price": "1850",
+        "img": "/imgsChanel/shehua01.jpg",
+        "details": "【官方正品】CHANEL 香奈儿奢华精萃赋活眼霜 滋润紧致淡化细纹",
+        "id": "香奈儿奢华精萃赋活眼霜02002",
+        "sale": 1605,
+        "star": 4.5
+      },
+
+      {
+        "label": "香奈儿奢华精萃精华水升级版",
+        "goodsType": "02002",
+        "type": "00004411",
+        "price": "1180",
+        "img": "/imgsChanel/shehua02.jpg",
+        "details": "【官方正品】CHANEL 香奈儿奢华精萃精华水升级版 紧致肌肤",
+        "id": "香奈儿奢华精萃精华水升级版02002",
+        "sale": 1503,
+        "star": 4.5
+      },
+
+      {
+        "label": "香奈儿奢华精萃隔离乳",
+        "goodsType": "02002",
+        "type": "00004411",
+        "price": "950",
+        "img": "/imgsChanel/shehua03.jpg",
+        "details": "【抢先加购】CHANEL 香奈儿奢华精萃隔离乳 防晒 SPF50 PA+++",
+        "id": "香奈儿奢华精萃隔离乳02002",
+        "sale": 2205,
+        "star": 4.5
+      },
+
+      {
+        "label": "香奈儿山茶花保湿乳霜",
+        "goodsType": "02001",
+        "type": "00004411",
+        "price": "720",
+        "img": "/imgsChanel/shanchahua01.jpg",
+        "details": "【官方正品】CHANEL 香奈儿山茶花保湿乳霜 润泽保湿 修护肌肤",
+        "id": "香奈儿山茶花保湿乳霜02001",
+        "sale": 950,
+        "star": 4.5
+      },
+
+      {
+        "label": "香奈儿山茶花润泽唇霜",
+        "goodsType": "02001",
+        "type": "00004411",
+        "price": "355",
+        "img": "/imgsChanel/shanchahua02.jpg",
+        "details": "【官方正品】CHANEL 香奈儿山茶花润泽唇霜 润唇膏 滋润保湿",
+        "id": "香奈儿山茶花润泽唇霜02001",
+        "sale": 800,
+        "star": 4
+      },
+
+      {
+        "label": "香奈儿山茶花润泽水感晚安面膜",
+        "goodsType": "02001",
+        "type": "00004411",
+        "price": "825",
+        "img": "/imgsChanel/shanchahua03.jpg",
+        "details": "【官方正品】CHANEL 香奈儿山茶花润泽水感晚安面膜 免洗面膜",
+        "id": "香奈儿山茶花润泽水感晚安面膜02001",
+        "sale": 1000,
+        "star": 4
+      },
+
+      {
+        "label": "香奈儿山茶花润泽微精华",
+        "goodsType": "02001",
+        "type": "00004411",
+        "price": "810",
+        "img": "/imgsChanel/shanchahua04.jpg",
+        "details": "【抢先加购】CHANEL 香奈儿山茶花润泽微精华 保湿精华深层滋润",
+        "id": "香奈儿山茶花润泽微精华02001",
+        "sale": 1000,
+        "star": 4
+      },
+
+      {
+        "label": "香奈儿山茶花润泽微精华乳霜",
+        "goodsType": "02001",
+        "type": "00004411",
+        "price": "840",
+        "img": "/imgsChanel/shanchahua05.jpg",
+        "details": "【抢先加购】CHANEL 香奈儿山茶花润泽微精华乳霜 面霜保湿滋润",
+        "id": "香奈儿山茶花润泽微精华乳霜02001",
+        "sale": 1200,
+        "star": 4
+      },
+
+      {
+        "label": "香奈儿山茶花润泽明星套装",
+        "goodsType": "02001",
+        "type": "00004411",
+        "price": "2125",
+        "img": "/imgsChanel/shanchahua06.jpg",
+        "details": "【抢先加购】CHANEL 香奈儿山茶花润泽明星套装 洗面奶精华乳霜",
+        "id": "香奈儿山茶花润泽明星套装02001",
+        "sale": 560,
+        "star": 3.5
+      },
+
+      {
+        "label": "香奈儿山茶花润泽水凝露",
+        "goodsType": "02001",
+        "type": "00004411",
+        "price": "720",
+        "img": "/imgsChanel/shanchahua07.jpg",
+        "details": "【官方正品】CHANEL 香奈儿山茶花润泽水凝露 轻盈面霜",
+        "id": "香奈儿山茶花润泽水凝露02001",
+        "sale": 1800,
+        "star": 4.5
+      },
+
+      {
+        "label": "香奈儿山茶花润泽修护面膜",
+        "goodsType": "02001",
+        "type": "00004411",
+        "price": "660",
+        "img": "/imgsChanel/shanchahua08.jpg",
+        "details": "【抢先加购】CHANEL 香奈儿山茶花润泽修护面膜 保湿舒缓",
+        "id": "香奈儿山茶花润泽修护面膜02001",
+        "sale": 3000,
+        "star": 4.5
+      },
+
+      {
+        "label": "香奈儿山茶花精华喷雾",
+        "goodsType": "02001",
+        "type": "00004411",
+        "price": "725",
+        "img": "/imgsChanel/shanchahua09.jpg",
+        "details": "【官方正品】CHANEL 香奈儿山茶花精华喷雾 补水保湿",
+        "id": "香奈儿山茶花精华喷雾02001",
+        "sale": 3500,
+        "star": 5
+      },
+
+      {
+        "label": "香奈儿山茶花润泽水感乳液",
+        "goodsType": "02001",
+        "type": "00004411",
+        "price": "610",
+        "img": "/imgsChanel/shanchahua010.jpg",
+        "details": "【抢先加购】CHANEL 香奈儿山茶花润泽水感乳液 匀润透亮",
+        "id": "香奈儿山茶花润泽水感乳液02001",
+        "sale": 1200,
+        "star": 4
+      },
+
+      {
+        "label": "香奈儿五号之水",
+        "goodsType": "01001",
+        "type": "00004411",
+        "price": "790",
+        "img": "/imgsChanel/wuhao01.jpg",
+        "details": "【抢先加购】CHANEL 香奈儿五号之水 n5经典女士香水 花香调",
+        "id": "香奈儿五号之水01001",
+        "sale": 3205,
+        "star": 5
+      },
+
+      {
+        "label": "香奈儿五号之水清新喷雾",
+        "goodsType": "01001",
+        "type": "00004411",
+        "price": "560",
+        "img": "/imgsChanel/wuhao02.jpg",
+        "details": "【官方正品】CHANEL香奈儿五号之水清新喷雾 五号香水系列",
+        "id": "香奈儿五号之水清新喷雾01001",
+        "sale": 2750,
+        "star": 4.5
+      },
+
+      {
+        "label": "香奈儿五号淡香水",
+        "goodsType": "01001",
+        "type": "00004411",
+        "price": "850",
+        "img": "/imgsChanel/wuhao03.jpg",
+        "details": "【官方正品】CHANEL 香奈儿五号淡香水(经典) N5 女士香水",
+        "id": "香奈儿五号淡香水01001",
+        "sale": 2402,
+        "star": 5
+      },
+
+      {
+        "label": "香奈儿可可小姐香水",
+        "goodsType": "01002",
+        "type": "00004411",
+        "price": "790",
+        "img": "/imgsChanel/coco01.jpg",
+        "details": "【抢先加购】CHANEL 香奈儿可可小姐香水 coco香水女士持久留香",
+        "id": "香奈儿可可小姐香水01002",
+        "sale": 3000,
+        "star": 5
+      },
+
+      {
+        "label": "香奈儿可可小姐淡香水",
+        "goodsType": "01002",
+        "type": "00004411",
+        "price": "850",
+        "img": "/imgsChanel/coco02.jpg",
+        "details": "【官方正品】CHANEL 香奈儿可可小姐淡香水 coco香水留香持久",
+        "id": "香奈儿可可小姐淡香水01002",
+        "sale": 2650,
+        "star": 4.5
+      },
+
+      {
+        "label": "香奈儿可可小姐润体乳",
+        "goodsType": "01002",
+        "type": "00004411",
+        "price": "505",
+        "img": "/imgsChanel/coco03.jpg",
+        "details": "【抢先加购】CHANEL 香奈儿可可小姐润体乳 滋润肌肤",
+        "id": "香奈儿可可小姐润体乳01002",
+        "sale": 960,
+        "star": 3.5
+      },
+
+      {
+        "label": "香奈儿可可小姐香体喷雾",
+        "goodsType": "01002",
+        "type": "00004411",
+        "price": "450",
+        "img": "/imgsChanel/coco04.jpg",
+        "details": "【官方正品】CHANEL 香奈儿可可小姐香体喷雾 留香持久",
+        "id": "香奈儿可可小姐香体喷雾01002",
+        "sale": 2740,
+        "star": 4.5
+      },
+
+      {
+        "label": "香奈儿可可小姐发香雾",
+        "goodsType": "01002",
+        "type": "00004411",
+        "price": "390",
+        "img": "/imgsChanel/coco05.jpg",
+        "details": "【抢先加购】CHANEL 香奈儿可可小姐发香雾 coco小姐香水系列",
+        "id": "香奈儿可可小姐发香雾01002",
+        "sale": 1960,
+        "star": 3
+      },
+
+      {
+        "label": "香奈儿邂逅系列发香喷雾",
+        "goodsType": "01003",
+        "type": "00004411",
+        "price": "390",
+        "img": "/imgsChanel/xiehou01.jpg",
+        "details": "【官方正品】CHANEL 香奈儿邂逅系列发香喷雾 chance清新发香雾",
+        "id": "香奈儿邂逅系列发香喷雾01003",
+        "sale": 990,
+        "star": 4.5
+      },
+
+      {
+        "label": "香奈儿邂逅柔情香体喷雾",
+        "goodsType": "01003",
+        "type": "00004411",
+        "price": "450",
+        "img": "/imgsChanel/xiehou02.jpg",
+        "details": "【官方正品】CHANEL 香奈儿邂逅柔情香体喷雾 留香持久",
+        "id": "香奈儿邂逅柔情香体喷雾01003",
+        "sale": 1100,
+        "star": 4
+      },
+
+      {
+        "label": "香奈儿邂逅系列香水",
+        "goodsType": "01003",
+        "type": "00004411",
+        "price": "640",
+        "img": "/imgsChanel/xiehou03.jpg",
+        "details": "【抢先加购】CHANEL 香奈儿邂逅系列香水 chance粉色柔情女香",
+        "id": "香奈儿邂逅系列香水0103",
+        "sale": 1560,
+        "star": 4
+      },
+
+      {
+        "label": "香奈儿邂逅系列润体乳",
+        "goodsType": "01003",
+        "type": "00004411",
+        "price": "505",
+        "img": "/imgsChanel/xiehou04.jpg",
+        "details": "【官方正品】CHANEL 香奈儿邂逅系列润体乳 滋润美肌持久留香",
+        "id": "香奈儿邂逅系列润体乳01003",
+        "sale": 740,
+        "star": 3
+      },
+
+      {
+        "label": "香奈儿邂逅香氛笔",
+        "goodsType": "01003",
+        "type": "00004411",
+        "price": "750",
+        "img": "/imgsChanel/xiehou05.jpg",
+        "details": "【官方正品】CHANEL 香奈儿邂逅香氛笔 邂逅香水系列 七夕限量",
+        "id": "香奈儿邂逅香氛笔01003",
+        "sale": 500,
+        "star": 3.5
+      },
+
+      {
+        "label": "香奈儿蔚蓝男士须后水",
+        "goodsType": "01004",
+        "type": "00004411",
+        "price": "505",
+        "img": "/imgsChanel/weilan01.jpg",
+        "details": "【官方正品】CHANEL 香奈儿蔚蓝男士须后水 blue舒缓清爽肌肤",
+        "id": "香奈儿蔚蓝男士须后水01004",
+        "sale": 300,
+        "star": 3
+      },
+
+      {
+        "label": "香奈儿蔚蓝男士清新喷雾",
+        "goodsType": "01004",
+        "type": "00004411",
+        "price": "275",
+        "img": "/imgsChanel/weilan02.jpg",
+        "details": "【抢先加购】CHANEL 香奈儿蔚蓝男士清新喷雾 blue清新香型",
+        "id": "香奈儿蔚蓝男士清新喷雾01004",
+        "sale": 2301,
+        "star": 5
+      },
+
+      {
+        "label": "香奈儿蔚蓝男士淡香水",
+        "goodsType": "01004",
+        "type": "00004411",
+        "price": "690",
+        "img": "/imgsChanel/weilan03.jpg",
+        "details": "【官方正品】CHANEL 香奈儿蔚蓝男士淡香水 blue木质香经典男香",
+        "id": "香奈儿蔚蓝男士淡香水01004",
+        "sale": 2000,
+        "star": 4.5,
+        "specification": [
+          {
+            "content": 35,
+            "num": 12000,
+            "price": 690
+          },
+
+          {
+            "content": 50,
+            "num": 1500,
+            "price": 1280
+          },
+
+          {
+            "content": 100,
+            "num": 800,
+            "price": 2480
+          }
+        ]
+      }
+    ]
+  }
+}

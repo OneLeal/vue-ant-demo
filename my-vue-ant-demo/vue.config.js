@@ -1,7 +1,8 @@
 const path = require('path');
+const chanelMsg = require('./src/mock/chanel/index.json');
 
 const themeSelf = {
-    'primary-color': '#4cff2c',
+    'primary-color': '#409EFF',
     'link-color': '#2623ff',
     'success-color': '#909399',
     'warning-color': '#fff838',
@@ -14,6 +15,7 @@ function resolve(dir) {
 
 module.exports = {
     lintOnSave: false, // 关闭eslint
+    runtimeCompiler: true, // runtime 模式下是否启用模板编译器 (Compiler)
 
     chainWebpack: config => {
         config.resolve.alias
@@ -56,6 +58,12 @@ module.exports = {
                 secure: false,      // 如果是https接口，需要配置这个参数
                 changeOrigin: true
             }
+        },
+        before(app){
+            // 商城-香奈儿店铺数据
+            app.get('/mall/chanel',(req,res,next)=>{
+                res.json(chanelMsg);
+            })
         }
     },
 };
