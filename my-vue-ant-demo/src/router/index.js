@@ -24,6 +24,12 @@ const routes = [
         meta: { title: '案例-动态表格' },
         component: () => import('@views/demo/components/dynamicTable')
       },
+
+      {
+        path: '/demo/goodsCard',
+        meta: { title: '案例-商品卡片' },
+        component: () => import('@views/demo/components/goodsCard')
+      }
     ]
   },
 

@@ -1,0 +1,39 @@
+{
+  "code": 200,
+  "msg": "商品数据返回成功",
+  "data": [
+    {
+      "label": "爱马仕大地馥郁香根草男士香水",
+      "goodsType": "02004",
+      "type": "00004411",
+      "price": "100",
+      "img": "/goodsCard/goodsCard01.jpg",
+      "details": "【官方正品】Hermes 爱马仕大地馥郁香根草男士香水",
+      "id": "爱马仕大地馥郁香根草男士香水02004",
+      "sale": 1260,
+      "star": 4.5,
+      "specification": {
+        "specialCode": "capacity",
+        "arr": [
+          {
+            "content": 35,
+            "num": 15,
+            "price": 100
+          },
+
+          {
+            "content": 50,
+            "num": 10,
+            "price": 120
+          },
+
+          {
+            "content": 100,
+            "num": 5,
+            "price": 150
+          }
+        ]
+      }
+    }
+  ]
+}

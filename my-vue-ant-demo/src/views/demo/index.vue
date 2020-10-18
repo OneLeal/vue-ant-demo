@@ -11,7 +11,9 @@
       </template>
     </a-menu>
 
-    <router-view />
+    <div class="demo-content mt-20 ml-20">
+      <router-view :goodsCard="goodsCard" />
+    </div>
   </div>
 </template>
 
@@ -51,7 +53,8 @@
     data() {
       return {
         menuCur: [],
-        nav: demoNav()
+        nav: demoNav(),
+        goodsCard: {}
       };
     },
     watch: {
@@ -72,7 +75,16 @@
           // 选择的路由与当前路由不一致时才跳转
           location.pathname !== key && this.$router.push({ path: key });
         }
+      },
+
+      fetchGoodsCard() {
+        this.$axios.get('/mall/goodsCard').then(res => {
+          this.goodsCard = res.data.data[0];
+        });
       }
+    },
+    created() {
+      this.fetchGoodsCard()
     },
     mounted() {
       this.$nextTick(() => {
