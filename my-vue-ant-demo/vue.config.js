@@ -1,6 +1,6 @@
 const path = require('path');
 const chanelMsg = require('./src/mock/chanel/index.json');
-const goodsCard = require('./src/mock/goodsCard/index.json');
+const goodsInfo = require('./src/mock/goodsInfo/index.json');
 
 const themeSelf = {
     'primary-color': '#409EFF',
@@ -64,7 +64,7 @@ module.exports = {
             // 商城-香奈儿店铺数据
             app
                 .get('/mall/chanel',(req, res, next) => { res.json(chanelMsg); })
-                .get('/mall/goodsCard',(req, res, next) => { res.json(goodsCard); })
+                .get('/mall/goodsInfo',(req, res, next) => { res.json(goodsInfo); })
         }
     },
 };

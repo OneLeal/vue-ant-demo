@@ -1,73 +1,38 @@
 <template>
-    <a-row class="goodsCard">
-        <a-col :span="12">
-            <a-card>
-                <img class="img" slot="cover" alt="example" src="/goodsCard/goodsCard01.jpg" />
-                <a-card-meta :title="goods.details">
-                    <template slot="description">
-                        <a-rate :default-value="goods.star" allow-half disabled />
-
-                        <div class="icon-collect" @click="collect">
-                            <a-icon :style="iconStyle" :theme="collectStyle" type="heart" />
-                        </div>
-                    </template>
-                </a-card-meta>
-            </a-card>
-        </a-col>
-
-        <a-col :span="12">
-            <a-form-model :model="goods">
-                <a-form-model-item label="价格" :wrapperCol="colSpan(4)" :labelCol="colSpan(4)">
-                    <span>{{ goods.price }}</span>
-                </a-form-model-item>
-
-                <a-form-model-item :wrapperCol="colSpan(20)" :labelCol="colSpan(4)" :label="ptCodeOrUnit(goods.specification.specialCode, 1)">
-                    <a-radio-group button-style="solid" v-model="capacity" @change="capacityChange">
-                        <a-radio-button v-for="item in goods.specification.arr" :value="item.content" :key="item.content">
-                            {{ item.content + ' ' + ptCodeOrUnit(goods.specification.specialCode) }}
-                        </a-radio-button>
-                    </a-radio-group>
-                </a-form-model-item>
-
-                <a-form-model-item label="库存：" :wrapperCol="colSpan(4)" :labelCol="colSpan(4)">
-                    <span>{{ storage }}</span>
-                </a-form-model-item>
-
-                <a-form-model-item label="数量" :wrapperCol="colSpan(4)" :labelCol="colSpan(4)">
-                    <a-input-number :min="1" :max="maxValue" v-model="number" @change="numberChange" />
-                </a-form-model-item>
-            </a-form-model>
-
-            <a-row class="operation">
-                <a-button type="primary">加入购物车</a-button>
-                <a-button disabled class="ml-20">结 算</a-button>
-            </a-row>
-        </a-col>
-    </a-row>
+    <a-card class="goodsCard clearFix scale">
+        <div class="img-wrap"><img slot="cover" :alt="goodsCard.details" :src="goodsCard.img" /></div>
+        <ul class="info-wrap">
+            <li class="title omit">
+                <a-tooltip overlayClassName="card-tooltip" placement="topLeft" :title="goodsCard.label">
+                    <span>{{ goodsCard.label }}</span>
+                </a-tooltip>
+            </li>
+            <li><span class="price">{{ RMB }}</span></li>
+            <li><a-rate :default-value="goodsCard.star" allow-half disabled /></li>
+            <li><span class="sale">{{ goodsCard.sale }}</span></li>
+        </ul>
+        <div class="icon-collect" @click="collect">
+            <a-icon :style="iconStyle" :theme="collectStyle" type="heart" />
+        </div>
+    </a-card>
 </template>
 
 <script>
     const ICON_STYLE = { fontSize: '28px', color: '#ff2c39' };
-    import { ptCodeOrUnit } from '@common/utils/productType';
-    import NP from 'number-precision';
+    import accounting from 'accounting';
     export default {
         name: "goodsCard",
         props: {
             goodsCard: {
-                required: true,
                 type: Object,
+                required: true,
                 default: () => ({})
             }
         },
         data() {
             return {
-                storage: this.goodsCard.specification.arr[0].num,
-                capacity: 35,
-                number: 1,
-                ptCodeOrUnit: ptCodeOrUnit,
-                isCollect: false,
                 iconStyle: ICON_STYLE,
-                goods: this.goodsCard,
+                isCollect: false
             }
         },
         computed: {
@@ -75,65 +40,88 @@
                 return this.isCollect ? 'filled' : 'twoTone';
             },
 
-            maxValue() {
-                const item = this.goods.specification.arr.find(item => item.content === this.capacity);
-                return item.num;
+            RMB: {
+                get() {
+                    return accounting.formatMoney(this.goodsCard.price, '￥', 2, ',')
+                }
             }
-        },
-        watch: {
-            goodsCard(value) { this.goods = value; }
         },
         methods: {
             collect() {
-                this.isCollect = !this.isCollect;
-            },
-
-            capacityChange(e) {
-                const item = this.goods.specification.arr.find(item => item.content === e.target.value);
-                this.goods.price = NP.round(NP.times(item.price, this.number), 2);
-                this.storage = item.num;
-            },
-
-            numberChange(value) {
-                const item = this.goods.specification.arr.find(item => item.content === this.capacity);
-                this.goods.price = NP.round(NP.times(item.price, value), 2)
-            },
-
-            colSpan(span) {
-                return { span }
+                this.isCollect = !this.isCollect
             }
+        },
+        created() {
+
         }
     }
 </script>
 
-<style scoped lang="less">
+<style lang="less" scoped>
     .goodsCard {
-        width: 1000px;
-        border: 1px #333 solid;
+        width: 448px;
 
-        .operation {
-            padding-left: 42px;
+        /deep/ .ant-card {
+            position: relative;
         }
 
-        .img {
-            vertical-align: bottom;
-            border-top-right-radius: @border-radius-def;
-            border-top-left-radius: @border-radius-def;
+        .img-wrap {
+            float: left;
+        }
+
+        .info-wrap {
+            padding-top: 5px;
+            padding-left: 20px;
+            width: 200px;
+            float: left;
+            list-style: none;
+
+            li {
+                padding: 5px 0;
+            }
+        }
+
+        img {
+            width: 180px;
         }
 
         .icon-collect {
             margin-right: 6px;
             font-size: 24px;
             position: absolute;
-            right: 10px;
-            bottom: 10px;
+            right: 24px;
+            bottom: 24px;
             cursor: pointer;
         }
 
-        /deep/ .ant-card {
-            width: 482px;
-            border-radius: @border-radius-def;
-            position: relative;
+        .sale:before {
+            content: '已售：';
+            font-size: @font-default;
+            color: @color-black;
+        }
+
+        .sale {
+            color: @color-red;
+            font-size: @font-big;
+            font-weight: bolder;
+        }
+
+        .title {
+            color: @color-black;
+            font-size: @font-big;
+            font-weight: bolder;
+        }
+
+        .card-tooltip {
+            background-color: @color-gray;
+            color: @color-black;
+        }
+
+        .price:before {
+            content: '价格：';
+            font-size: @font-big;
+            color: @color-black;
+            font-weight: bolder;
         }
     }
 </style>

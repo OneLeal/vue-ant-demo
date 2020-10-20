@@ -12,7 +12,7 @@
     </a-menu>
 
     <div class="demo-content mt-20 ml-20">
-      <router-view :goodsCard="goodsCard" />
+      <router-view :goodsInfo="goodsInfo" :goodsCard="goodsInfo" />
     </div>
   </div>
 </template>
@@ -54,7 +54,7 @@
       return {
         menuCur: [],
         nav: demoNav(),
-        goodsCard: {}
+        goodsInfo: {}
       };
     },
     watch: {
@@ -77,14 +77,14 @@
         }
       },
 
-      fetchGoodsCard() {
-        this.$axios.get('/mall/goodsCard').then(res => {
-          this.goodsCard = res.data.data[0];
+      fetchGoodsInfo() {
+        this.$axios.get('/mall/goodsInfo').then(res => {
+          this.goodsInfo = res.data.data[0];
         });
       }
     },
     created() {
-      this.fetchGoodsCard()
+      this.fetchGoodsInfo()
     },
     mounted() {
       this.$nextTick(() => {

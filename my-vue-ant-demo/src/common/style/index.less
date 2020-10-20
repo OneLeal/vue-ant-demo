@@ -46,3 +46,32 @@ antd-theme:
 .ml-10 { margin-left: 10px; }
 .mr-10 { margin-right: 10px; }
 
+.clearFix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.clearFix {
+  *zoom: 1;
+}
+
+.omit {
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
+
+.scale:hover {
+  border-width: 3px;
+  border-color: @color-primary;
+  transform: scale(1.06);
+  transition: all .7s;
+}
+
+.price {
+  color: @color-red;
+  font-size: 24px;
+  font-weight: bolder;
+}
+

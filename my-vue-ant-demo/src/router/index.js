@@ -29,7 +29,13 @@ const routes = [
         path: '/demo/goodsCard',
         meta: { title: '案例-商品卡片' },
         component: () => import('@views/demo/components/goodsCard')
-      }
+      },
+
+      {
+        path: '/demo/goodsInfo',
+        meta: { title: '案例-商品信息' },
+        component: () => import('@views/demo/components/goodsInfo')
+      },
     ]
   },
 
