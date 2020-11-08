@@ -143,7 +143,7 @@
                     this.$axios.get('/modal/goodsInfo').then(res => {
                         const { data, code} = res.data;
                         if (code === 200) {
-                            // 排序，设置 ico、disabled、required、单选框的默认值等，都在这里进行，封装一个公共方法
+                            // 排序，设置 icon、disabled、required、单选框的默认值等，都在这里进行，封装一个公共方法
                             data.formItems = setIcon(data.formItems, iconGroup());
 
                             data.formItems.forEach(item => {

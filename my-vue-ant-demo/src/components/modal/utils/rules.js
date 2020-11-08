@@ -9,7 +9,6 @@ export const rules = () => ({
 
 export const validatorPhone = (rule, value, callback) => {
     const pat = /^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/;
-    console.log(value);
     if(!(pat.test(value))){
         callback('手机号格式不正确');
     }
