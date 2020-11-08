@@ -1,6 +1,8 @@
 const path = require('path');
 const chanelMsg = require('./src/mock/chanel/index.json');
 const goodsInfo = require('./src/mock/goodsInfo/index.json');
+const goodsInfoModal = require('./src/mock/formData/formGoodsInfo');
+const goodsCardModal = require('./src/mock/formData/formGoodsCard');
 
 const themeSelf = {
     'primary-color': '#409EFF',
@@ -65,6 +67,8 @@ module.exports = {
             app
                 .get('/mall/chanel',(req, res, next) => { res.json(chanelMsg); })
                 .get('/mall/goodsInfo',(req, res, next) => { res.json(goodsInfo); })
+                .get('/modal/goodsInfo',(req, res, next) => { res.json(goodsInfoModal); })
+                .get('/modal/goodsCard',(req, res, next) => { res.json(goodsCardModal); })
         }
     },
 };

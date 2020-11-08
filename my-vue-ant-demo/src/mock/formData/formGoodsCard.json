@@ -1,0 +1,88 @@
+{
+  "code": 200,
+  "msg": "request success",
+  "data": {
+    "type": "goodsCard",
+    "formItems": [
+      {
+        "label": "兴趣标签",
+        "value": "undefined",
+        "type": "2",
+        "index": 1,
+        "option": [
+          {
+            "label": "抖音",
+            "value": "TikTok"
+          },
+
+          {
+            "label": "荔枝",
+            "value": "litchi"
+          },
+
+          {
+            "label": "微信读书",
+            "value": "WeChatRead"
+          },
+
+          {
+            "label": "天猫",
+            "value": "Tmall"
+          },
+
+          {
+            "label": "知乎",
+            "value": "Zhihu"
+          },
+
+          {
+            "label": "美团",
+            "value": "Meituan"
+          },
+
+          {
+            "label": "LeetCode",
+            "value": "LeetCode"
+          }
+        ]
+      },
+
+      {
+        "label": "权限",
+        "value": "undefined",
+        "type": "1",
+        "index": 3,
+        "option": [
+          {
+            "label": "公开",
+            "value": "0"
+          },
+
+          {
+            "label": "好友",
+            "value": "1"
+          },
+
+          {
+            "label": "私密",
+            "value": "2"
+          }
+        ]
+      },
+
+      {
+        "label": "留言",
+        "value": "undefined",
+        "type": "4",
+        "index": 2
+      },
+
+      {
+        "label": "姓名",
+        "value": "undefined",
+        "type": "0",
+        "index": 0
+      }
+    ]
+  }
+}
