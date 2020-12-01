@@ -6,12 +6,13 @@
             :cancelText="cancelText"
             :maskClosable="false"
             :confirmLoading="btnLoading"
+            :okButtonProps="{ props: { disabled: loading } }"
             @ok="handleOk"
             @cancel="handleCancel"
     >
         <a-spin :spinning="loading" tip="加载中...">
             <template v-if="loading">
-                <div class="mt-20 mb-20" />
+                <div class="mt-20 mb-20"/>
             </template>
 
             <template v-else>
@@ -48,17 +49,19 @@
 
 <script>
     import ModalItem from './components/modalItem';
-    import { rules } from './utils/rules';
+    import {rules} from './utils/rules';
     export default {
-        components: { ModalItem },
+        components: {ModalItem},
         props: {
-            title: { type: String, default: '新建数据' },
-            formData: { type: Array, default: () => [] },
-            formItems: { type: Object, default: () => {} },
-            visible: { type: Boolean, default: false },
-            cancelText: { type: String, default: '取 消' },
-            okText: { type: String, default: '确 定' },
-            loading: { type: Boolean, default: false }
+            title: {type: String, default: '新建数据'},
+            formData: {type: Array, default: ([])},
+            formItems: {
+                type: Object, default: ({})
+            },
+            visible: {type: Boolean, default: false},
+            cancelText: {type: String, default: '取 消'},
+            okText: {type: String, default: '确 定'},
+            loading: {type: Boolean, default: false}
         },
         data() {
             return {
@@ -80,7 +83,7 @@
         },
         methods: {
             colSpan(span) {
-                return { span }
+                return {span}
             },
 
             onChange(value) {

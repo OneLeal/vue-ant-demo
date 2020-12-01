@@ -1,10 +1,23 @@
 <template>
-    <div>动态表格</div>
+    <div>
+        <p>动态表格</p>
+        <p>测试请求</p>
+    </div>
 </template>
 
 <script>
+    import { fetchMallGoodsInfo } from '../../../http/api';
     export default {
-        name: "DynamicTable"
+        name: "DynamicTable",
+        methods: {
+            async init() {
+                const { code, msg, data } = await fetchMallGoodsInfo();
+                console.log(code, msg, data);
+            }
+        },
+        created() {
+            this.init();
+        }
     }
 </script>
 

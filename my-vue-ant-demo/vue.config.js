@@ -25,6 +25,7 @@ module.exports = {
             .set('@', resolve('src'))
             .set('@views', resolve('src/views'))
             .set('@common', resolve('src/common'))
+            .set('@store', resolve('src/store'))
             .set('@components', resolve('src/components'))
     },
 
@@ -55,11 +56,12 @@ module.exports = {
         https: false,
         hotOnly: true, // 热更新
         proxy: {
-            '^/api': {
-                target: '127.0.0.1:3000', // 重写路径
+            '/api': {
+                target: 'http://127.0.0.1:3000', // 重写路径
                 ws: true,   //开启WebSocket
                 secure: false,      // 如果是https接口，需要配置这个参数
-                changeOrigin: true
+                changeOrigin: true,
+                pathRewrite: { '^/api': '' }
             }
         },
         before(app){
