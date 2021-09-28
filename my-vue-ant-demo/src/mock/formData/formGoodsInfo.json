@@ -1,0 +1,54 @@
+{
+  "code": 200,
+  "msg": "request success",
+  "data": {
+    "type": "goodsInfo",
+    "formItems": [
+      {
+        "label": "姓名",
+        "value": "undefined",
+        "type": "0",
+        "index": 0
+      },
+
+      {
+        "label": "年龄",
+        "value": "undefined",
+        "type": "0",
+        "index": 1
+      },
+
+      {
+        "label": "性别",
+        "value": "1",
+        "type": "1",
+        "index": 2,
+        "option": [
+          {
+            "label": "男",
+            "value": "1"
+          },
+
+          {
+            "label": "女",
+            "value": "0"
+          }
+        ]
+      },
+
+      {
+        "label": "出生日期",
+        "value": "undefined",
+        "type": "3",
+        "index": 3
+      },
+
+      {
+        "label": "手机号",
+        "value": "undefined",
+        "type": "0",
+        "index": 4
+      }
+    ]
+  }
+}

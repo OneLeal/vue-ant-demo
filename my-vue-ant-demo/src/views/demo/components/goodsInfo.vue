@@ -43,16 +43,32 @@
                 <a-button disabled class="ml-20">结 算</a-button>
             </a-row>
         </a-col>
+
+        <a-row class="goods-form-modal">
+            <a-button type="primary" @click="createData">新建数据</a-button>
+            <Modal
+                    okText="提 交"
+                    cancelText="再想想"
+                    :loading="loading"
+                    :formData="formData"
+                    :formItems="formItems"
+                    v-model="modalShow"
+                    @change="modalShow = !modalShow"
+            />
+        </a-row>
     </a-row>
 </template>
 
 <script>
     const ICON_STYLE = { fontSize: '28px', color: '#ff2c39' };
     import { ptCodeOrUnit } from '@common/utils/productType';
+    import { setIcon, setDisabled, iconGroup } from '@components/modal/utils/formConfig';
+    import Modal from '@components/modal';
     import NP from 'number-precision';
     import accounting from 'accounting';
     export default {
         name: "goodsInfo",
+        components: { Modal },
         props: {
             goodsInfo: {
                 required: true,
@@ -69,6 +85,12 @@
                 isCollect: false,
                 iconStyle: ICON_STYLE,
                 goods: this.goodsInfo,
+
+                // modal data
+                modalShow: false,
+                loading: false,
+                formData: [],
+                formItems: {}
             }
         },
         computed: {
@@ -108,6 +130,45 @@
 
             colSpan(span) {
                 return { span }
+            },
+
+            createData() {
+                this.fetchModalData();
+                this.modalShow = true;
+            },
+
+            fetchModalData() {
+                this.loading = true;
+                let timer = setTimeout(() => {
+                    this.$axios.get('/modal/goodsInfo').then(res => {
+                        const { data, code} = res.data;
+                        if (code === 200) {
+                            // 排序，设置 icon、disabled、required、单选框的默认值等，都在这里进行，封装一个公共方法
+                            data.formItems = setIcon(data.formItems, iconGroup());
+
+                            data.formItems.forEach(item => {
+                                if (item.label === '兴趣标签') {
+                                    item.option = setDisabled(item.option, ['抖音', '知乎']);
+                                }
+                            });
+
+                            this.formData = data.formItems.sort((a, b) => a.index - b.index);
+                            for (let key of data.formItems) {
+                                this.$set(this.formItems, key.label, undefined);
+                                // this.formItems[key.label] = undefined;
+                            }
+                            console.log(this.formData, this.formItems);
+                        } else {
+                            throw new Error('request failed !');
+                        }
+                    }).catch((err) => {
+                        this.$message.warn({ title: '提 示', content: '新建数据接口调用失败！' });
+                        console.warn(err);
+                    }).finally(() => {
+                        this.loading = false;
+                    });
+                }, 1500);
+                timer = null;
             }
         }
     }
@@ -135,6 +196,12 @@
             right: 10px;
             bottom: 10px;
             cursor: pointer;
+        }
+
+        .goods-form-modal {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
         }
 
         /deep/ .ant-card {

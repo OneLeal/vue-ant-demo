@@ -1,27 +1,45 @@
 <template>
-    <a-card class="goodsCard clearFix scale">
-        <div class="img-wrap"><img slot="cover" :alt="goodsCard.details" :src="goodsCard.img" /></div>
-        <ul class="info-wrap">
-            <li class="title omit">
-                <a-tooltip overlayClassName="card-tooltip" placement="topLeft" :title="goodsCard.label">
-                    <span>{{ goodsCard.label }}</span>
-                </a-tooltip>
-            </li>
-            <li><span class="price">{{ RMB }}</span></li>
-            <li><a-rate :default-value="goodsCard.star" allow-half disabled /></li>
-            <li><span class="sale">{{ goodsCard.sale }}</span></li>
-        </ul>
-        <div class="icon-collect" @click="collect">
-            <a-icon :style="iconStyle" :theme="collectStyle" type="heart" />
-        </div>
-    </a-card>
+    <a-row>
+        <a-card class="goodsCard clearFix scale">
+            <div class="img-wrap"><img slot="cover" :alt="goodsCard.details" :src="goodsCard.img" /></div>
+            <ul class="info-wrap">
+                <li class="title omit">
+                    <a-tooltip overlayClassName="card-tooltip" placement="topLeft" :title="goodsCard.label">
+                        <span>{{ goodsCard.label }}</span>
+                    </a-tooltip>
+                </li>
+                <li><span class="price">{{ RMB }}</span></li>
+                <li><a-rate :default-value="goodsCard.star" allow-half disabled /></li>
+                <li><span class="sale">{{ goodsCard.sale }}</span></li>
+            </ul>
+            <div class="icon-collect" @click="collect">
+                <a-icon :style="iconStyle" :theme="collectStyle" type="heart" />
+            </div>
+        </a-card>
+
+        <a-row class="mt-20">
+            <a-button type="primary" @click="createData">新建数据</a-button>
+            <Modal
+                    okText="提 交"
+                    cancelText="再想想"
+                    :loading="loading"
+                    :formData="formData"
+                    :formItems="formItems"
+                    v-model="modalShow"
+                    @change="modalShow = !modalShow"
+            />
+        </a-row>
+    </a-row>
 </template>
 
 <script>
     const ICON_STYLE = { fontSize: '28px', color: '#ff2c39' };
     import accounting from 'accounting';
+    import Modal from '@components/modal';
+    import { setIcon, setDisabled, iconGroup } from '@components/modal/utils/formConfig';
     export default {
         name: "goodsCard",
+        components: { Modal },
         props: {
             goodsCard: {
                 type: Object,
@@ -32,7 +50,13 @@
         data() {
             return {
                 iconStyle: ICON_STYLE,
-                isCollect: false
+                isCollect: false,
+
+                // modal data
+                modalShow: false,
+                loading: false,
+                formData: [],
+                formItems: {}
             }
         },
         computed: {
@@ -49,10 +73,51 @@
         methods: {
             collect() {
                 this.isCollect = !this.isCollect
+            },
+
+            createData() {
+                this.fetchModalData();
+                this.modalShow = true;
+            },
+
+            fetchModalData() {
+                this.loading = true;
+                let timer = setTimeout(() => {
+                    this.$axios.get('/modal/goodsCard').then(res => {
+                        const { data, code} = res.data;
+                        if (code === 200) {
+                            // 排序，设置 ico、disabled、required、单选框的默认值等，都在这里进行，封装一个公共方法
+                            data.formItems = setIcon(data.formItems, iconGroup());
+
+                            data.formItems.forEach(item => {
+                               if (item.label === '兴趣标签') {
+                                   item.option = setDisabled(item.option, ['抖音', '知乎']);
+                               }
+                            });
+
+                            this.formData = data.formItems.sort((a, b) => a.index - b.index);
+                            console.log(this.formData);
+                            // this.formData = []; // 测试空数组
+                            for (let key of data.formItems) {
+                                this.$set(this.formItems, key.label, undefined); // 一定要这么写
+                                // this.formItems[key.label] = undefined;
+                            }
+                            console.log(this.formData, this.formItems);
+                        } else {
+                            throw new Error('request failed !');
+                        }
+                    }).catch((err) => {
+                        this.$message.warn({ title: '提 示', content: '新建数据接口调用失败！' });
+                        console.warn(err);
+                    }).finally(() => {
+                        this.loading = false;
+                    });
+                }, 1500);
+                timer = null;
             }
         },
         created() {
-
+            this.fetchModalData();
         }
     }
 </script>

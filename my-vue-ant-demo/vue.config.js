@@ -1,6 +1,8 @@
 const path = require('path');
 const chanelMsg = require('./src/mock/chanel/index.json');
 const goodsInfo = require('./src/mock/goodsInfo/index.json');
+const goodsInfoModal = require('./src/mock/formData/formGoodsInfo');
+const goodsCardModal = require('./src/mock/formData/formGoodsCard');
 
 const themeSelf = {
     'primary-color': '#409EFF',
@@ -23,6 +25,7 @@ module.exports = {
             .set('@', resolve('src'))
             .set('@views', resolve('src/views'))
             .set('@common', resolve('src/common'))
+            .set('@store', resolve('src/store'))
             .set('@components', resolve('src/components'))
     },
 
@@ -53,11 +56,12 @@ module.exports = {
         https: false,
         hotOnly: true, // 热更新
         proxy: {
-            '^/api': {
-                target: '127.0.0.1:3000', // 重写路径
+            '/api': {
+                target: 'http://127.0.0.1:3000', // 重写路径
                 ws: true,   //开启WebSocket
                 secure: false,      // 如果是https接口，需要配置这个参数
-                changeOrigin: true
+                changeOrigin: true,
+                pathRewrite: { '^/api': '' }
             }
         },
         before(app){
@@ -65,6 +69,8 @@ module.exports = {
             app
                 .get('/mall/chanel',(req, res, next) => { res.json(chanelMsg); })
                 .get('/mall/goodsInfo',(req, res, next) => { res.json(goodsInfo); })
+                .get('/modal/goodsInfo',(req, res, next) => { res.json(goodsInfoModal); })
+                .get('/modal/goodsCard',(req, res, next) => { res.json(goodsCardModal); })
         }
     },
 };
