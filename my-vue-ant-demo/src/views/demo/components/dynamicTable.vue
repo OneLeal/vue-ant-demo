@@ -11,6 +11,7 @@
         name: "DynamicTable",
         methods: {
             async init() {
+                // TODO: fixed the request.
                 const { code, msg, data } = await fetchMallGoodsInfo();
                 console.log(code, msg, data);
             }
