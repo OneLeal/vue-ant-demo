@@ -51,6 +51,13 @@ const routes = [
     meta: { title: "商城" },
     component: () => import("@views/mall"),
   },
+
+  {
+    path: "/vant",
+    name: "Vant",
+    meta: { title: "移动端页面" },
+    component: () => import("@views/vantDemo"),
+  },
 ];
 // component: () => import("../views/About.vue")
 const router = new VueRouter({
