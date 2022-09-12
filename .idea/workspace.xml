@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2b8ad48e-ff20-4708-9117-2d3fac7a1197" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="e#0#22#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>handleOk</find>
+      <find>computed</find>
+      <find>setIcon</find>
+      <find>modalShow</find>
+      <find>undefined</find>
+      <find>formItems</find>
+      <find>colSpan</find>
+      <find>onChange</find>
+      <find>setDisabled</find>
+      <find>createData</find>
+      <find>init</find>
+      <find>animate</find>
+      <find>requestAnimationFrame</find>
+      <find>1.</find>
+      <find>cdn</find>
+      <find>.png</find>
+      <find>.jpg</find>
+      <find>a-form-model-item</find>
+      <find>selInsurance</find>
+      <find>$axios</find>
+      <find>error</find>
+      <find>response.status</find>
+      <find>response</find>
+      <find>visible</find>
+      <find>btnLoading</find>
+      <find>loading</find>
+      <find>handleCancel</find>
+      <find>fetchModalData</find>
+      <find>options</find>
+      <find>loadingInstance</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/components/SubMenu.vue" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/common/utils/subMenu.js" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/views/Demo.vue" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/views/Home.vue" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/components/test2.vue" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/views/home/components/subMenu.js" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/views/home/components/subMenu1.vue" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/views/home/components/subMenu.vue" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/views/home/components/SubMenu.js" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/views/demo/components/shop.vue" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/views/demo/components/test1.vue" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/views/chanel/index.vue" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/views/home/components/test1.vue" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/views/home/components/dynamicTable.vue" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/views/home/components/cart.vue" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/views/home/index.vue" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/views/mall/index.vue" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/mock/specification/index.json" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/mock/chanel/index.json" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/common/utils/productType.js" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/mock/goodsCard/index.json" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/mock/goodsInfo/index.json" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/views/demo/index.vue" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/common/utils/menu.js" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/common/style/index.less" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/views/demo/components/cart.vue" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/components/dialogA.vue" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/components/dialog.vue" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/components/formItem.vue" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/mock/formData/formGoodsInfo.json" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/mock/formData/formGoodsCard.json" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/views/demo/components/goodsCard.vue" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/components/modal/utils/formConfig.js" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/components/modal/components/modalItem.vue" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/components/modal/utils/rules.js" />
+        <option value="$USER_HOME$/Desktop/3d-02.html" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/public/index.html" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/router/index.js" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/views/demo/components/threeD.vue" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/mock/dynamicTable/insuranceInfo.json" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/components/dynamicTable/selInsurance.vue" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/components/dynamicTable/totalMoney.vue" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/components/dynamicTable/insuranceInfo.vue" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/vue.config.js" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/http/index.js" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/http/request.js" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/views/demo/components/goodsInfo.vue" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/components/modal/index.vue" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/views/demo/components/dynamicTable.vue" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/http/api/index.js" />
+        <option value="$PROJECT_DIR$/my-vue-ant-demo/src/http/api/axios.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-5" />
+    <option name="width" value="1390" />
+    <option name="height" value="790" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="vue-ant-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue-ant-demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue-ant-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue-ant-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="my-vue-ant-demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue-ant-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue-ant-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="my-vue-ant-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../antdManageSys" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHub\vue-ant-demo\my-vue-ant-demo\public\bg" />
+      <recent name="D:\GitHub\vue-ant-demo\my-vue-ant-demo\src\views\demo\components" />
+      <recent name="D:\GitHub\vue-ant-demo\my-vue-ant-demo\public\goodsCard" />
+      <recent name="D:\GitHub\vue-ant-demo\my-vue-ant-demo\src\views\home" />
+      <recent name="D:\GitHub\vue-ant-demo\my-vue-ant-demo\public\imgsChanel" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GitHub\vue-ant-demo\my-vue-ant-demo\src\views\demo" />
+      <recent name="D:\GitHub\vue-ant-demo\my-vue-ant-demo\src\views\home" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2b8ad48e-ff20-4708-9117-2d3fac7a1197" name="Default Changelist" comment="" />
+      <created>1602866463775</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602866463775</updated>
+      <workItem from="1602866464989" duration="4316000" />
+      <workItem from="1602944103578" duration="62587000" />
+      <workItem from="1603117971773" duration="5145000" />
+      <workItem from="1603203838011" duration="7576000" />
+      <workItem from="1603463269925" duration="4947000" />
+      <workItem from="1604673263530" duration="58744000" />
+      <workItem from="1605270093698" duration="18000" />
+      <workItem from="1606540955814" duration="4261000" />
+      <workItem from="1606552103961" duration="7685000" />
+      <workItem from="1606827208272" duration="14610000" />
+      <workItem from="1607150065287" duration="1725000" />
+      <workItem from="1607257055484" duration="2088000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="173702000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16248348" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.22206506" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/components/HelloWorld.vue" />
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/components/SubMenu.vue" />
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/common/utils/subMenu.js" />
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/components/test2.vue" />
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/views/home/components/subMenu1.vue" />
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/views/home/components/subMenu.vue" />
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/views/home/components/SubMenu.js" />
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/views/demo/components/test1.vue" />
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/views/demo/components/shop.vue" />
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/views/mall/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/babel.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/common/utils/productType.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/common/style/index.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/components/test.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/components/dialogA.vue" />
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/components/dialog.vue" />
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/components/formItem.vue" />
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/views/demo/components/cart.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/node_modules/ant-design-vue/es/input/Input.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="53" column="2" selection-start-line="53" selection-start-column="2" selection-end-line="53" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/components/modal/utils/formConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="33" lean-forward="true" selection-start-column="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/common/utils/menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/3d-02.html" />
+    <entry file="file://$USER_HOME$/Desktop/threeD.vue" />
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/mock/formData/formGoodsCard.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <folding>
+            <element signature="e#223#826#0" />
+            <element signature="e#843#1208#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/public/bg/bg.jpg" />
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/components/modal/utils/rules.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="13" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="18" column="62" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/views/demo/components/threeD.vue" />
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/mock/chanel/index.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4279">
+          <caret line="560" column="7" lean-forward="true" selection-start-line="560" selection-start-column="7" selection-end-line="560" selection-end-column="7" />
+          <folding>
+            <element signature="e#12435#12731#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/mock/dynamicTable/insuranceInfo.json" />
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/components/dynamicTable/totalMoney.vue" />
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/components/dynamicTable/selInsurance.vue" />
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/components/dynamicTable/insuranceInfo.vue" />
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/views/demo/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="80" column="19" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/views/demo/components/goodsCard.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="85" column="37" selection-start-line="85" selection-start-column="37" selection-end-line="85" selection-end-column="37" />
+          <folding>
+            <element signature="e#1435#1471#0" expanded="true" />
+            <element signature="n#style#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/views/demo/components/goodsInfo.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2850">
+          <caret line="139" column="30" lean-forward="true" selection-start-line="139" selection-start-column="30" selection-end-line="139" selection-end-column="30" />
+          <folding>
+            <element signature="n#a-col#0;n#a-row#0;n#template#0;n#!!top" />
+            <element signature="n#a-col#1;n#a-row#0;n#template#0;n#!!top" />
+            <element signature="n#style#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/http/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="41" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/http/api/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" column="81" selection-start-line="6" selection-start-column="81" selection-end-line="6" selection-end-column="81" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/views/demo/components/dynamicTable.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="8" column="59" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/http/request.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/http/api/axios.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="36" column="40" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="40" />
+          <folding>
+            <element signature="e#11#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/mock/goodsInfo/index.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="4" column="5" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/components/modal/components/modalItem.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/components/modal/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="32" column="42" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/mock/formData/formGoodsInfo.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/vue.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-vue-ant-demo/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
